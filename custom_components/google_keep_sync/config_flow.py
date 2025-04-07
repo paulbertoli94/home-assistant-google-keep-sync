@@ -41,6 +41,7 @@ CHOICES_LIST_CASE = {
     "lower": "lowercase",
     "sentence": "Sentence case",
     "title": "Title Case",
+    "trim": "Remove front or final space"
 }
 
 

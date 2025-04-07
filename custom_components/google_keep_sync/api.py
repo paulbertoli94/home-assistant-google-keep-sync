@@ -25,6 +25,7 @@ class ListCase(StrEnum):
     LOWER = "lower"
     SENTENCE = "sentence"
     TITLE = "title"
+    TRIM = "trim"
 
 
 class GoogleKeepAPI:
@@ -488,4 +489,6 @@ class GoogleKeepAPI:
             return text.capitalize()
         if case_type == ListCase.TITLE:
             return text.title()
+        if case_type == ListCase.TRIM:
+            return text.strip()
         return text
